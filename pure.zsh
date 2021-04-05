@@ -135,7 +135,7 @@ prompt_pure_preprompt_render() {
 	[[ -n $prompt_pure_state[username] ]] && preprompt_parts+=($prompt_pure_state[username])
 	
 	# set aws cli profile
-	preprompt_parts+=('%F{yellow}$[{AWS_PROFILE}]%f')
+	preprompt_parts+=('%F{yellow}[${AWS_PROFILE}]%f')
 	
 	# Set the path.
 	preprompt_parts+=('%F{${prompt_pure_colors[path]}}%~%f')
